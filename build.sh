@@ -12,6 +12,7 @@ dnf install -y \
 	plasma-desktop
 
 # install user packages
-dnf install -y \
-	zen-browser \
-	zed
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install -y flathub \
+	app.zen_browser.zen \
+	dev.zed.Zed
