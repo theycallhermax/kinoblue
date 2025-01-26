@@ -35,13 +35,13 @@ sudo docker run --rm --privileged --volume .:/build-container-installer/build --
     VARIANT=Silverblue
 ```
 
-The output file will be deploy.iso file in the same directory you have ran the above command in.
+The output file will be `deploy.iso` file in the same directory you have ran the above command in.
 
 ## Testing the image
 
 > [!CAUTION]
 > 
-> All of these instructions are **temporary storage** and are deleted when you delete the container.
+> All of these instructions are **temporary storage** and are deleted when you shut down the container.
 
 ### Running in TTY mode
 
