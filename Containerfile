@@ -12,4 +12,3 @@ RUN glib-compile-schemas /usr/share/glib-2.0/schemas
 RUN mkdir -p /var/lib/alternatives && \
 	/tmp/build.sh && \
 	ostree container commit
-#	bootc container lint
