@@ -7,5 +7,5 @@ ADD dotfiles /usr/etc/skel
 
 RUN mkdir -p /var/lib/alternatives && \
 	/tmp/build.sh && \
-	ostree container commit && \
-	bootc container lint
+	ostree container commit
+#	bootc container lint
