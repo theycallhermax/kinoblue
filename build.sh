@@ -7,5 +7,5 @@ dnf install -y "dnf5-command(copr)"
 dnf -y copr enable sneexy/zen-browser
 
 dnf install -y \
-	zen \
+	zen-browser \
 	zed
