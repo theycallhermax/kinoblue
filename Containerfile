@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/base-main:41
+FROM quay.io/fedora/fedora-bootc:41
 
 COPY build.sh /tmp/build.sh
 
