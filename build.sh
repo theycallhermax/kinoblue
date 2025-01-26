@@ -4,7 +4,7 @@ set -ouex pipefail
 
 # install repos
 dnf install -y "dnf5-command(copr)"
-curl --output-dir "/etc/yum.repos.d/" --remote-name https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+dnf install -y --nogpgcheck --repofrompath "terra,https://repos.fyralabs.com/terra$(rpm -E %fedora)" terra-release
 dnf -y copr enable sneexy/zen-browser
 dnf install -y terra-release
 
