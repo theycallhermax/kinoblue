@@ -3,7 +3,8 @@ FROM quay.io/fedora/fedora-bootc:41
 COPY build.sh /tmp/build.sh
 
 COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-udev-rules /
-# COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os/update-services /
+COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-update-services.noarch.rpm /
+RUN rpm -ivh /ublue-os-update-services.noarch.rpm
 
 RUN rm -rf dotfiles/.git && mkdir -p /usr/etc/skel
 ADD dotfiles /usr/etc/skel
