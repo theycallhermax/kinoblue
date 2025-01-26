@@ -12,7 +12,8 @@ dnf install -y terra-release
 dnf install -y \
 	flatpak \
  	git \
-    fuse fuse-libs
+    fuse fuse-libs \
+	distrobox
 
 # install environment packages 
 dnf install -y \
