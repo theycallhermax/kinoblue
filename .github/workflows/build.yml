@@ -63,8 +63,7 @@ jobs:
           # By default, it should generate "latest" and "latest.(date here)".
           tags: |
             type=raw,value=latest
-            type=raw,value=latest.{{date 'YYYYMMDD'}}
-            type=raw,value={{date 'YYYYMMDD'}}
+            type=raw,value=41
             type=sha,enable=${{ github.event_name == 'pull_request' }}
             type=ref,event=pr
           labels: |
@@ -79,7 +78,7 @@ jobs:
             org.opencontainers.image.version=latest
             io.artifacthub.package.deprecated=false
             io.artifacthub.package.keywords=bootc,ublue,universal-blue
-            io.artifacthub.package.license=Apache-2.0
+            io.artifacthub.package.license=CC0
             io.artifacthub.package.logo-url=${{ env.ARTIFACTHUB_LOGO_URL }}
             io.artifacthub.package.prerelease=false
             containers.bootc=1
