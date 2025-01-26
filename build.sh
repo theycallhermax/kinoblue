@@ -11,6 +11,12 @@ dnf -y copr enable sneexy/zen-browser
 dnf install -y \
 	flatpak \
  	git
+	
+# install icon theme
+git clone --depth=1 https://github.com/theycallhermax/WhiteSur-icon-theme.git /tmp/WhiteSur-icon-theme
+cd /tmp/WhiteSur-icon-theme
+./install.sh -a
+cd -
 
 # install environment packages 
 dnf install -y \
