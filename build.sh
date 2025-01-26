@@ -3,8 +3,7 @@
 set -ouex pipefail
 
 # install repos
-dnf install -y "dnf5-command(copr)"
-dnf install -y --nogpgcheck --repofrompath "terra,https://repos.fyralabs.com/terra$(rpm -E %fedora)" terra-release
+dnf install -y --repofrompath "terra,https://repos.fyralabs.com/terra$(rpm -E %fedora)" terra-release
 dnf -y copr enable sneexy/zen-browser
 
 # install cli packages
