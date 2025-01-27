@@ -22,7 +22,7 @@ My personal Fedora Kinoite + Silverblue image, soon to be a separate base image 
 
 > [!TIP]
 > 
-> This image updates VERY OFTEN. Run `rpm-ostree upgrade` regularly.
+> This image auto-updates regularly when installed, so `rpm-ostree upgrade` isn't required for staying up-to-date.
 
 ```sh
 sudo docker run --rm --privileged --volume .:/build-container-installer/build --security-opt label=disable --pull=newer \
@@ -41,7 +41,7 @@ The output file will be `deploy.iso` file in the same directory you have ran the
 
 > [!CAUTION]
 > 
-> You are running the image **temporary storage** and are deleted when you shut down the container.
+> You are running the image **temporary storage** and is deleted when you shut down the container.
 
 ```sh
 docker pull ghcr.io/theycallhermax/kinoblue:latest
