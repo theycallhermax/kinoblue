@@ -41,20 +41,7 @@ The output file will be `deploy.iso` file in the same directory you have ran the
 
 > [!CAUTION]
 > 
-> All of these instructions are **temporary storage** and are deleted when you shut down the container.
-
-### Running in TTY mode
-
-> [!CAUTION]
-> 
-> You're probably better off with running in GUI mode, as it lets you create a user.
-
-```sh
-docker pull ghcr.io/theycallhermax/kinoblue:latest
-docker run --privileged -it ghcr.io/theycallhermax/kinoblue:latest /usr/lib/systemd/systemd rhgb --system --run-level 3
-```
-
-### Running in GUI mode
+> You are running the image **temporary storage** and are deleted when you shut down the container.
 
 ```sh
 docker pull ghcr.io/theycallhermax/kinoblue:latest
