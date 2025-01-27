@@ -1,6 +1,6 @@
 # Kinoblue
 
-My personal Fedora Kinoite + Silverblue image
+My personal Fedora Kinoite + Silverblue image, soon to be a separate base image soon!
 
 ## Features
 
