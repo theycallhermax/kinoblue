@@ -2,10 +2,6 @@ FROM ghcr.io/ublue-os/base-main:41
 
 COPY build.sh /tmp/build.sh
 
-COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-udev-rules /
-COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-update-services.noarch.rpm /
-RUN rpm -ivh /ublue-os-update-services.noarch.rpm
-
 RUN for script in dotfiles/*; do bash $script; done
 
 RUN rm -rf dotfiles/.git && mkdir -p /usr/etc/skel
