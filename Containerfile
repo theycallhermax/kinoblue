@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/main:41
+FROM ghcr.io/ublue-os/base-main:41
 
 COPY build.sh /tmp/build.sh
 
