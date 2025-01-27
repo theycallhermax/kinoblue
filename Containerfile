@@ -2,7 +2,7 @@ FROM ghcr.io/ublue-os/base-main:41
 
 COPY build.sh /tmp/build.sh
 
-RUN for script in dotfiles/*; do bash $script; done
+RUN for script in scripts/*; do bash $script; done
 
 RUN rm -rf dotfiles/.git && mkdir -p /usr/etc/skel
 ADD dotfiles /usr/etc/skel
