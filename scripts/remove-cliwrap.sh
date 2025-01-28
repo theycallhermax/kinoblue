@@ -1,6 +1,8 @@
 #!/bin/bash
 # stolen from https://github.com/m2Giles/m2os/blob/main/remove-cliwrap.sh
 
+set -ouex pipefail
+
 if [[ ! -d /usr/libexec/rpm-ostree/wrapped ]]; then
 	echo "cliwrap is not setup, skipping..."
 	exit 0
