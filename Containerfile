@@ -8,7 +8,6 @@ RUN for script in /tmp/scripts/*; do bash $script; done
 RUN rm -rf dotfiles/.git && mkdir -p /usr/etc/skel
 ADD dotfiles /usr/etc/skel
 
-RUN dnf install -y glib2
 ADD overrides /usr/share/glib-2.0/schemas/
 RUN glib-compile-schemas /usr/share/glib-2.0/schemas
 
