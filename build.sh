@@ -30,4 +30,5 @@ rm -rf /tmp/WhiteSur-icon-theme
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub \
 	app.zen_browser.zen \
-	dev.zed.Zed
+	dev.zed.Zed \
+	io.bassi.Amberol
