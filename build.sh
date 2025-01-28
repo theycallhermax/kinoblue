@@ -17,7 +17,7 @@ dnf install -y \
 	rsms-inter-fonts \
 	cascadia-code-fonts cascadia-code-nf-fonts cascadia-code-pl-fonts \
 	yaru-sound-theme \
-	gnome-boxes gnome-connections gnome-software ptyxis gnome-text-editor nautilus baobab evince evince-djvu gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-tweaks gnome-disk-utility gnome-font-viewer gnome-logs gnome-maps gnome-remote-desktop gnome-system-monitor gnome-weather loupe simple-scan snapshot sushi vlc
+	gnome-boxes gnome-connections gnome-software ptyxis gnome-text-editor nautilus baobab evince evince-djvu gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-tweaks gnome-disk-utility gnome-font-viewer gnome-logs gnome-maps gnome-remote-desktop gnome-system-monitor gnome-weather loupe simple-scan snapshot vlc
 
 # install icon theme
 git clone --depth=1 https://github.com/theycallhermax/WhiteSur-icon-theme.git /tmp/WhiteSur-icon-theme
