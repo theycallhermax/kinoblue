@@ -22,7 +22,7 @@ dnf remove -y \
 	plasma-systemmonitor \
 	kfind \
 	kcharselect \
-	kde-partition-manager \
+	partitionmanager \
 	firewall-config \
 	kinfocenter \
 	kdebugsettings \
