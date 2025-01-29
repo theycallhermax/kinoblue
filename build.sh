@@ -11,12 +11,28 @@ dnf install -y terra-release
 dnf install -y \
 	git 
 
-# install environment packages 
+# install environment packages
+dnf group install -y kde-desktop
+dnf remove -y \
+	dolphin \
+	filelight \
+	ark \
+	konsole \
+	kwrite \
+	plasma-systemmonitor \
+	kfind \
+	kcharselect \
+	kde-partition-manager \
+	firewall-config \
+	kinfocenter \
+	kdebugsettings \
+	kde-gtk-config \
+	plasma-discover
 dnf install -y \
-	plasma-desktop \
 	rsms-inter-fonts \
 	cascadia-code-fonts cascadia-code-nf-fonts cascadia-code-pl-fonts \
 	yaru-sound-theme \
+	spectacle \
 	gnome-boxes gnome-connections gnome-software ptyxis gnome-text-editor nautilus baobab evince evince-djvu gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-tweaks gnome-disk-utility gnome-font-viewer gnome-logs gnome-maps gnome-remote-desktop gnome-system-monitor gnome-weather loupe simple-scan snapshot vlc
 
 # install icon theme
