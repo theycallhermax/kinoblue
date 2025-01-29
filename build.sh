@@ -27,7 +27,9 @@ dnf remove -y \
 	kinfocenter \
 	kdebugsettings \
 	kde-gtk-config \
-	plasma-discover
+	plasma-discover \
+	krfb \
+	kjournald
 dnf install -y \
 	rsms-inter-fonts \
 	cascadia-code-fonts cascadia-code-nf-fonts cascadia-code-pl-fonts \
