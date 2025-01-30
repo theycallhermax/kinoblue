@@ -22,4 +22,4 @@ dnf remove -y \
 	krfb \
 	kjournald
 dnf install -y \
-	gnome-boxes gnome-connections gnome-software ptyxis gnome-text-editor nautilus baobab evince evince-djvu gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-tweaks gnome-disk-utility gnome-font-viewer gnome-logs gnome-maps gnome-remote-desktop gnome-system-monitor gnome-weather loupe simple-scan snapshot totem
+	gnome-boxes gnome-connections gnome-software ptyxis gnome-text-editor nautilus baobab evince gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-tweaks gnome-disk-utility gnome-font-viewer gnome-logs gnome-maps gnome-remote-desktop gnome-system-monitor gnome-weather loupe simple-scan snapshot totem
