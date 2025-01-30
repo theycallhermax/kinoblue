@@ -1,14 +1,11 @@
 # Kinoblue
 
-My personal Fedora Kinoite + Silverblue image, soon to be a separate base image soon!
+Merging Fedora Kinoite and Fedora Silverblue together... because I can.
 
 ## Features
 
 - Based on Fedora 41 and Universal Blue
 - Provides a KDE Plasma environment with GNOME apps
-- Applies my [dotfiles](https://git.gay/max/dotfiles)
-- Makes AppImages work out of box
-- Uses Inter and Cascadia Code as the UI fonts
 
 ## Running the image
 
