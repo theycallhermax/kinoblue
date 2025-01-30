@@ -12,6 +12,7 @@ dnf remove -y \
 	kwrite \
 	plasma-systemmonitor \
 	kfind \
+	kate \
 	kcharselect \
 	kde-partitionmanager \
 	firewall-config \
